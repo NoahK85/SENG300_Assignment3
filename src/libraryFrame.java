@@ -14,14 +14,10 @@ import java.awt.Dimension;
 import javax.swing.JLabel;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
 import javax.swing.ImageIcon;
 import javax.swing.SwingConstants;
-import java.awt.CardLayout;
 import java.awt.GridBagLayout;
 import java.awt.GridBagConstraints;
-import javax.swing.SpringLayout;
 import java.awt.Insets;
 import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
@@ -31,15 +27,10 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JList;
 import javax.swing.AbstractListModel;
 import javax.swing.JScrollPane;
-import javax.swing.ListSelectionModel;
-import javax.swing.ScrollPaneConstants;
-import net.miginfocom.swing.MigLayout;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.border.TitledBorder;
-import java.awt.Label;
-import java.awt.Rectangle;
 
 public class libraryFrame extends JFrame {
 
