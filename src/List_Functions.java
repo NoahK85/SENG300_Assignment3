@@ -7,11 +7,14 @@
  * Assignment 3
  * Description: 
 */
+import java.io.File;
 import java.util.List;
+
 
 public interface List_Functions {
 	
 	//Methods
+	List importCSV(File fileName);
 	List searchList(String id);
 	void sortList(String value, boolean value2);
 	Book getBook(int index);
