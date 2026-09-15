@@ -44,13 +44,15 @@ public class Book implements Comparable<Book> {
     private URL smallImageUrl;        // small_image_url
     
     // Constructors
-    public Book(int bookId, String isbn, String authors, int originalPublicationYear, String title, double averageRating) {
-        this.bookId = bookId;
-        this.isbn = isbn;
-        this.authors = authors;
+    public Book(int bookId, String isbn, String authors, int originalPublicationYear, String title, double averageRating, String languageCode, URL imageUrl) {
+        this.bookId                  = bookId;
+        this.isbn                    = isbn;
+        this.authors                 = authors;
         this.originalPublicationYear = originalPublicationYear;
-        this.title = title;
-        this.averageRating = averageRating;
+        this.title                   = title;
+        this.averageRating           = averageRating;
+        this.languageCode            = languageCode;
+        this.imageUrl                = imageUrl;
     }
      
     public Book() {
@@ -58,12 +60,25 @@ public class Book implements Comparable<Book> {
     }
     
     // Methods
-    public int getId() { return bookId; }
-    public String getIsbn() { return isbn; }
-    public String getTitle() { return title; }
-    public String getAuthor() { return authors; }
+    public int    getId()       { return bookId;        }
+    public String getIsbn()     { return isbn;          }
+    public String getTitle()    { return title;         }
+    public String getAuthor()   { return authors;       }
+    public double getRating()   { return averageRating; }
+    public String getLanguage() { return languageCode;  }
+    public URL    getImageUrl() { return imageUrl;      }
     public int getOriginalPublicationYear() { return originalPublicationYear; }
-    public double getRating() { return averageRating; }
+    
+    public void setId      (int    bookId       ) { this.bookId        = bookId;        }
+    public void setIsbn    (String isbn         ) { this.isbn          = isbn;          }
+    public void setTitle   (String title        ) { this.title         = title;         }
+    public void setAuthor  (String authors      ) { this.authors       = authors;       }
+    public void setRating  (double averageRating) { this.averageRating = averageRating; }
+    public void setLanguage(String languageCode ) { this.languageCode  = languageCode;  }
+    public void setImageUrl(URL    imageUrl     ) { this.imageUrl      = imageUrl;      }
+    public void setOriginalPublicationYear(int originalPublicationYear) {this.originalPublicationYear = originalPublicationYear; }
+    
+   
 
     @Override
     public int compareTo(Book other) {

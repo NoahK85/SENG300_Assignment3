@@ -5,20 +5,23 @@
  * Institution: Ferris State University
  * SENG300: Software Data Structures and Algorithms
  * Assignment 3
- * Description: 
+ * Description: interface with list functions.
 */
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 
 public interface List_Functions {
 	
 	//Methods
-	List importCSV(File fileName);
+	int getSize();
 	List searchList(String id);
 	void sortList(String value, boolean value2);
 	Book getBook(int index);
 	void editList(Book newBook, int index);
 	void deleteList(int index);
+	void importList(ArrayList<Book> List);
+	ArrayList<String> getFirstTen();
 
 }
